@@ -516,3 +516,94 @@ ul {
     }
 }
 
+/* ===========================Style od About Page ================== */
+
+.about-container {
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    direction: rtl;
+    text-align: center;
+    margin-top: 80px;
+}
+.about-container .head{
+    background-color: #007DBC;
+    margin: 0%;
+    padding: 10px;
+}
+.about-container .about-img img{
+    position: relative;
+    right: 0px;
+    margin-right: 0px;
+    width: 1160px;
+    padding: 0px;
+    resize: vertical;
+    
+}
+.about-container h1,h2{
+    font-family: Noto Sans Arabic, -apple-system, system-ui,
+                BlinkMacSystemFont, Segoe UI, Roboto,
+                Helvetica Neue, Arial, sans-serif;
+    font-weight: bold;
+    color: #fdfdfd;
+}
+.about-container p{
+    color: #007DBC;
+    font-size: 28px;
+    font-family: Noto Sans Arabic, -apple-system, system-ui,
+                BlinkMacSystemFont, Segoe UI, Roboto,
+                Helvetica Neue, Arial, sans-serif;
+    font-weight: bold;
+}
+.container {
+    direction: rtl;
+    display: flex; 
+    max-width: 1200px;
+    margin: 20px auto;
+    font-size: 22px;
+    font-family: Noto Sans Arabic, -apple-system, system-ui,
+                BlinkMacSystemFont, Segoe UI, Roboto,
+                Helvetica Neue, Arial, sans-serif;
+}
+.container .sidebar ul{
+    font-family: "Lalezar", sans-serif;
+    font-style: normal;
+}
+.container .sidebar ul li a{
+    text-decoration: none;
+    color: #007DBC;
+}
+.container .sidebar ul li {
+    margin-top: 25px;
+}
+.content {
+    width: 75%; /* عرض المحتوى */
+    padding: 20px;
+    background: white; /* لون خلفية المحتوى */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.content h2{
+    color: #007DBC;
+}
+.content p{
+    font-size:20px ;
+}
+.content section {
+    margin-bottom: 20px; 
+}
+
+.map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
