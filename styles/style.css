@@ -1,0 +1,339 @@
+/*------------------ FontAwesome Icons --------------------------------*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+/*--------------------- إعدادات عامة ---------------------------------*/
+.light {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/*------------------------------- رأس الصفحة ---------------------------*/
+.header {
+    background-color: #007dbc;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo img {
+    height: 60px;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+.nav-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-donate-now {
+    background-color: #f44336;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn-donate-now:hover {
+    background-color: #d32f2f;
+}
+
+.btn-theme {
+    background-color: white;
+    color: #007dbc;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.btn-theme:hover {
+    transform: scale(1.05);
+}
+
+/* ---------------------------قائمة الهامبرغر -----------------------*/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* -------------------------قسم الصورة الرئيسية ---------------------*/
+.hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 500px;
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: right;
+    animation: fadeIn 2s ease;
+}
+.hero-buttons {
+    margin-top: 1rem;
+}
+.btn-donate, .btn-read {
+    background-color: #007dbc;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+}
+.btn-donate:hover, .btn-read:hover {
+    background-color: #005f91;
+    transform: scale(1.05);
+}
+
+/* -----------------------------المقالات ---------------------------*/
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+.article {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+.article:hover {
+    transform: translateY(-5px);
+}
+.article img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+/*---------------------------- نموذج التواصل ----------------------*/
+.contact-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.contact-form h2{
+    text-align: center;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Cairo', sans-serif;
+}
+.contact-form button {
+    background-color: #007dbc;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.contact-form button:hover {
+    background-color: #005f91;
+}
+.error {
+    color: red;
+    font-size: 0.9rem;
+}
+
+/*---------------------------- خريطة ----------------------------*/
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 2rem;
+}
+
+/* -------------------------- الرسوم المتحركة --------------------*/
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/*----------------------- استجابة الجوال --------------------------*/
+@media (max-width: 768px) {
+    .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #007dbc;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 999;
+}
+.nav.open {
+    display: flex;
+}
+.hamburger {
+    display: flex;
+}
+.container {
+    flex-wrap: wrap;
+    }
+}
+
+/* ---------------------- General Footer Styles ----------------------*/
+.footer {
+    background-color: #002244;
+    color: white;
+    padding: 3rem 1rem;
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #ffcc00;
+}
+
+.footer a:hover {
+    color: #ffcc00;
+}
+
+/*-------------------- Layout for Footer Sections ------------------*/
+.footer-sits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.footer-list {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    background-color: #003366;
+}
+
+.footer-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    border-top: 1px solid #ffffff33;
+    margin-top: 2rem;
+}
+
+/* ------------------- Bottom Columns Styling --------------*/
+.footer-column-bottom {
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+/*-------------------- Social Icons Row -----------------*/
+.special ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.special-icon {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.special-icon:hover {
+    color: #ffcc00;
+}
+
+/* Bottom Links */
+.footer-column-bottom p a {
+    color: white;
+    font-size: 0.9rem;
+    margin: 0 0.3rem;
+}
+
+.footer-column-bottom p a:hover {
+    text-decoration: underline;
+}
+.footer-list:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-sits {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .special ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
